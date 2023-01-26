@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+
+<body>
+    <div class="ocean">
+        <div class="bubble bubble--1"></div>
+        <div class="bubble bubble--2"></div>
+        <div class="bubble bubble--3"></div>
+        <div class="bubble bubble--4"></div>
+        <div class="bubble bubble--5"></div>
+        <div class="bubble bubble--6"></div>
+        <div class="bubble bubble--7"></div>
+        <div class="bubble bubble--8"></div>
+        <div class="bubble bubble--9"></div>
+        <div class="bubble bubble--10"></div>
+        <div class="bubble bubble--11"></div>
+        <div class="bubble bubble--12"></div>
+        <div id="octocat"></div>
+    </div>
+    <section>
+        <article>
+            <h1>Mehrchensteuer</h1>
+            <form>
+                <select id="calculationType" name="calculationType">
+                    <option value="netToGross">NETTO</option>
+                    <option value="grossToNet">BRUTTO</option>
+                </select><br>
+                <label for="price">Betrag:</label>
+                <input type="text" id="price" name="price">
+                <br>
+                <label for="vatRate">Mehrchensteuersatz:</label><br>
+                <select id="vatRate" name="vatRate">
+                    <option value="19">19%</option>
+                    <option value="7">7%</option>
+                </select>
+                <br>
+                <button type="button" onclick="calculateVAT()">Berechnen</button>
+            </form>
+            <p>Ergebniss: <span id="result"></span>€</p>
+            <p>MehrchenSt.: <span id="vat"></span>€</p>
+            <p>Netto: <span id="netPrice"></span>€</p>
+        </article>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+
+</html>
